@@ -1,4 +1,4 @@
-Total time spent on the project: `4h 10m`
+Total time spent on the project: `1h 30m`
 
 ## TOC
 
@@ -32,7 +32,7 @@ Total time spent on the project: `4h 10m`
 ```
 ❌ Uncompleted Tasks
 
-✅ Completed Tasks
+✅ Completed Tasks ( Checked for completion )
 ```
 - 👉 **Pages**
 ---
@@ -45,45 +45,45 @@ Total time spent on the project: `4h 10m`
 
     **Scenario**
 
-    - A user visits the list page and sees a list of patients along with a search form that comprises:
+    - ❌ A user visits the list page and sees a list of patients along with a search form that comprises:
     a search query input, a filter (with sex and age) and an alphabetical sorting tool.
-    - A user starts searching by typing a query inside the search input field.
-    - When the user stops typing, that is, after a 500 milliseconds delay, the query is used to search the data
-    - If a result is found, the data it returns should render a list of patient
-    - If there is no result, the user should see an error message
-    - If the user deletes every single search query from the input field, it should return the entire users in the list
-    - When the user selects the age filter, it should return the search result that contains only the selected age range
-    - When the user selects the sex filter, It should return the search result that contains only the selected sex
-    - When the user selects the age filter and the sex filter, it should return the search result that contains only the selected sex and selected age range.
+    - ❌ A user starts searching by typing a query inside the search input field.
+    - ❌ When the user stops typing, that is, after a 500 milliseconds delay, the query is used to search the data
+    - ❌ If a result is found, the data it returns should render a list of patient
+    - ❌ If there is no result, the user should see an error message
+    - ❌ If the user deletes every single search query from the input field, it should return the entire users in the list
+    - ❌ When the user selects the age filter, it should return the search result that contains only the selected age range
+    - ❌ When the user selects the sex filter, It should return the search result that contains only the selected sex
+    - ❌ When the user selects the age filter and the sex filter, it should return the search result that contains only the selected sex and selected age range.
 
     **List Functionality**
-    - List should only show the Patient ID and Full name
-    - A route to the Patient's detail page
+    - ❌ List should only show the Patient ID and Full name
+    - ❌ A route to the Patient's detail page
 
     **Scenario**
-    - A user visits the app main page, the user should see a list of Patients.
-    - Each list item should have the patient's Full name and patient's ID
-    - When the user clicks on a Patient on the list
-    - The user is directed to the patient's detail page
+    - ❌ A user visits the app main page, the user should see a list of Patients.
+    - ❌ Each list item should have the patient's Full name and patient's ID
+    - ❌ When the user clicks on a Patient on the list
+    - ❌ The user is directed to the patient's detail page
 ----
   - <span style="color: cyan; font-size: 20px"> Details Page </span>
 
 - Go back Functionality
-  - A go back button
+  - ❌ A go back button
 
 - Scenario
-  - A user visits the Patient's details page
-  - When the user clicks the go back button, the user is directed back to the list page. The search result, filter and sort data should persist.
+  - ❌ A user visits the Patient's details page
+  - ❌ When the user clicks the go back button, the user is directed back to the list page. The search result, filter and sort data should persist.
 - Delete Functionality
-    - A delete button to trigger delete confirmation modal
-    - A delete confirmation modal with a confirm delete and a cancel button
+    - ❌ A delete button to trigger delete confirmation modal
+    - ❌ A delete confirmation modal with a confirm delete and a cancel button
 - Scenario
-    - A user visits the Patient's details page, the user should see the complete patient data.
-    - And it should have a delete button.
-    - When the user clicks on the delete button, a modal should pop up with a confirmation text:
+    - ❌ A user visits the Patient's details page, the user should see the complete patient data.
+    - ❌ And it should have a delete button.
+    - ❌ When the user clicks on the delete button, a modal should pop up with a confirmation text:
     "Are you sure you want to delete `${userID}`"?
-    - When the user clicks on the confirm Delete button, the Patient is deleted
-    - And the user is directed back to the main page with the same search result, filter and sort data that were there previously without the deleted Patient.
+    - ❌ When the user clicks on the confirm Delete button, the Patient is deleted
+    - ❌ And the user is directed back to the main page with the same search result, filter and sort data that were there previously without the deleted Patient.
 
 ## My Stack of choice
 
@@ -95,14 +95,6 @@ Total time spent on the project: `4h 10m`
 - Zustand
 
 ## 🔨 Design Decisions
-
-### 🔶 Why PocketBase
-
-PocketBase is a self-hosted solution that help create SASS application very fast and easy. in this project we needed something to be able to perform CRUD operations and third-party tools such as JSONPlaceHolder has their limits. such as not allowing to perform many activities in a certain time stamp.
-
-I had previous experience with PocketBase for one of my own projects and I thought that it might help here. and no surprise. it did a lot. I got a free fly.io server and boot up a docker image and set volumes for data consistency and after just 10 minutes I have a fully working backend for my project with no cost.
-
-I had experiences with other Headless CMS ( PocketBase is not a headless CMS ) such as Contentful and Strapi. but I thing it's a total overkill to use a CMS for this app.
 
 ### 🔶 Why not Axios ( Or similar HTTP libraries )
 
