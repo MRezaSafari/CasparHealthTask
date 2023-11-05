@@ -40,7 +40,7 @@ const mockData: IPatient[] = [
   },
 ];
 
-describe("Table", () => {
+describe("<Table />", () => {
 
   it("should render successfully", () => {
     const {container} = render(<div><Table columns={columns} data={[]} /></div>);

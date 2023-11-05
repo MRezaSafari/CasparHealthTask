@@ -64,7 +64,7 @@ const PatientDetails: FC = () => {
       <p>Gender: {patient.gender}</p>
       <p>Age: {patient.age}</p>
 
-      <button onClick={handleOpenModal}>Delete Patient</button>
+      <button onClick={handleOpenModal} data-testid='delete-patient-button'>Delete Patient</button>
     </PatientContainer>
   );
 };

@@ -7,11 +7,11 @@ const Modal: FC<IModalProps> = ({ title, children, isOpen, onClose }) => {
   if (!isOpen) return <></>;
 
   return (
-    <ModalContainer>
+    <ModalContainer data-testid="modal">
       <ModalContents>
         <ModalHeader>
           <p>{title}</p>
-          <IconX onClick={onClose} color={"#000"} />
+          <IconX data-testid="close-icon" onClick={onClose} color={"#000"} />
         </ModalHeader>
         <main>{children}</main>
       </ModalContents>

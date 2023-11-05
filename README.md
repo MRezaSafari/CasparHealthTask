@@ -21,6 +21,8 @@ Total time spent on the project: `9h 40m`
 
 `npm run test`
 
+![Tests Result](./public/test-result.png)
+
 ### Objective:
 
 > Create a patient search tool. It should have 2 pages: a list page and a detail’s page. The list page should have a search form and a list while the detail’s page should have the patient's details.

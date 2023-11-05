@@ -57,7 +57,6 @@ describe("filterPatients", () => {
       query: "Gloriane",
       sort: { field: "age", order: "asc"}
     });
-    console.log(result)
 
     expect(result.length).toBe(1);
     expect(result[0].first_name).toBe("Gloriane");

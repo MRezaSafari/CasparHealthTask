@@ -2,6 +2,6 @@
 module.exports = {
     preset: 'ts-jest',
     testEnvironment: 'jsdom',
-    // roots: ['<rootDir>/test'],
+    setupFiles: ["whatwg-fetch"],
     setupFilesAfterEnv: ["@testing-library/jest-dom/extend-expect"],
   };    
