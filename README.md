@@ -4,11 +4,9 @@ Total time spent on the project: `9h 40m`
 
 1. [How to run the project](#How-to-run-the-project)
 2. [How to run unit tests](#🧪-Running-unit-tests)
-3. [How to run E2E tests](#🧪-Running-E2E-tests)
-4. [How to run E2E tests](#🧪-Running-E2E-tests)
-5. [Objectives](#Objectives)
-6. [My Stack of choice](#My-Stack-of-choice)
-7. [Design Decisions](#Design-Decisions)
+3. [Objectives](#Objectives)
+4. [My Stack of choice](#My-Stack-of-choice)
+5. [Design Decisions](#Design-Decisions)
 
 ## How to run the project
 
