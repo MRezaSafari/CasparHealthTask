@@ -13,6 +13,15 @@ export interface IPatient {
 export interface IPatientsStore {
   patients: IPatient[];
   setPatients: (patients: IPatient[]) => void;
-  initiate: () => void;
+  filters: IFilters;
+  setFilters: (filters: IFilters) => void;
   reload: () => void;
+}
+
+export interface IFilters {
+  isInitial: boolean;
+  query: string;
+  age: string;
+
+  gender: Gender | 'All';
 }

@@ -5,7 +5,7 @@ export const TableContainer = styled.table`
 
   thead {
     tr td {
-      padding: 0;
+      padding: 1rem 0;
     }
     tr:first-of-type {
       td:first-of-type {
@@ -32,7 +32,7 @@ export const TableContainer = styled.table`
   }
 
   td {
-    padding: 1.5rem 0;
+    padding: 1rem 0;
     text-align: center;
     transition: all ease 400ms;
     border: 1px solid;
@@ -41,6 +41,7 @@ export const TableContainer = styled.table`
 
   tbody tr:hover td {
     background-color: #e4e4e4;
+    cursor: pointer;
   }
 `;
 

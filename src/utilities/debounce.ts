@@ -1,9 +1,14 @@
-function debounce<T extends Function>(cb: T, wait = 20) {
+function debounce<T extends (...args: any[]) => any>(cb: T, wait = 20) {
   let h: any = 0;
-  let callable = (...args: any) => {
+  const callable = (...args: any[]) => {
     clearTimeout(h);
     h = setTimeout(() => cb(...args), wait);
   };
-  return <T>(<any>callable);
+
+  callable.cancel = () => {
+    clearTimeout(h);
+  };
+
+  return callable as T & { cancel: () => void };
 }
 export default debounce;

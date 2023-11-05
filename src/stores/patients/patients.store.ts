@@ -7,17 +7,24 @@ const usePatientsStore = create<IPatientsStore>()(
   devtools(
     persist(
       (set, get) => ({
-        initiate: async () => {
-          if (get().patients.length === 0) {
-            console.log("Initiating patients store...");
-            const patientsData = await getPatients();
-            set({ patients: patientsData });
-          }
-        },
         reload: async () => {
-          console.log("Reloading patients store...");
-          const patientsData = await getPatients();
+          const patientsData = await getPatients({
+            age: "-1",
+            gender: "All",
+            query: "",
+            isInitial: false,
+          });
           set({ patients: patientsData });
+          localStorage.removeItem("patient-storage");
+        },
+        filters: {
+          age: "-1",
+          gender: "All",
+          query: "",
+          isInitial: true,
+        },
+        setFilters: (filters) => {
+          set({ filters });
         },
         patients: [],
         setPatients: (patients: IPatient[]) => set({ patients }),

@@ -6,7 +6,8 @@ exports[`Table should match the snapshot 1`] = `
     <table
       cellpadding="0"
       cellspacing="0"
-      class="sc-bdnyFh djjcnq"
+      class="sc-bdnyFh eSGjeE"
+      data-testid="table"
     >
       <thead>
         <tr>
@@ -22,7 +23,7 @@ exports[`Table should match the snapshot 1`] = `
               <ul>
                 <li>
                   <svg
-                    class="tabler-icon tabler-icon-chevron-up"
+                    class="sort-asc"
                     fill="none"
                     height="15"
                     stroke="currentColor"
@@ -41,6 +42,7 @@ exports[`Table should match the snapshot 1`] = `
                 <li>
                   <svg
                     class="tabler-icon tabler-icon-chevron-down"
+                    data-testid="sort-desc"
                     fill="none"
                     height="15"
                     stroke="currentColor"
@@ -71,7 +73,7 @@ exports[`Table should match the snapshot 1`] = `
               <ul>
                 <li>
                   <svg
-                    class="tabler-icon tabler-icon-chevron-up"
+                    class="sort-asc"
                     fill="none"
                     height="15"
                     stroke="currentColor"
@@ -90,6 +92,7 @@ exports[`Table should match the snapshot 1`] = `
                 <li>
                   <svg
                     class="tabler-icon tabler-icon-chevron-down"
+                    data-testid="sort-desc"
                     fill="none"
                     height="15"
                     stroke="currentColor"
@@ -126,7 +129,8 @@ exports[`Table should match the snapshot with data 1`] = `
     <table
       cellpadding="0"
       cellspacing="0"
-      class="sc-bdnyFh djjcnq"
+      class="sc-bdnyFh eSGjeE"
+      data-testid="table"
     >
       <thead>
         <tr>
@@ -142,7 +146,7 @@ exports[`Table should match the snapshot with data 1`] = `
               <ul>
                 <li>
                   <svg
-                    class="tabler-icon tabler-icon-chevron-up"
+                    class="sort-asc"
                     fill="none"
                     height="15"
                     stroke="currentColor"
@@ -161,6 +165,7 @@ exports[`Table should match the snapshot with data 1`] = `
                 <li>
                   <svg
                     class="tabler-icon tabler-icon-chevron-down"
+                    data-testid="sort-desc"
                     fill="none"
                     height="15"
                     stroke="currentColor"
@@ -191,7 +196,7 @@ exports[`Table should match the snapshot with data 1`] = `
               <ul>
                 <li>
                   <svg
-                    class="tabler-icon tabler-icon-chevron-up"
+                    class="sort-asc"
                     fill="none"
                     height="15"
                     stroke="currentColor"
@@ -210,6 +215,7 @@ exports[`Table should match the snapshot with data 1`] = `
                 <li>
                   <svg
                     class="tabler-icon tabler-icon-chevron-down"
+                    data-testid="sort-desc"
                     fill="none"
                     height="15"
                     stroke="currentColor"

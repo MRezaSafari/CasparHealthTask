@@ -16,6 +16,7 @@ interface ITableProps<T> {
   columns: IColumnTemplate<T>[];
   data: T[] | undefined;
   onSort?: (column: keyof T, direction: OrderDirection) => void;
+  onRowClick?: (row: T) => void;
 }
 
 export type { IColumnTemplate, ColumnType, ITableProps, OrderDirection };

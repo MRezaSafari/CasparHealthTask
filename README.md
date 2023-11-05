@@ -1,4 +1,4 @@
-Total time spent on the project: `3h 10m`
+Total time spent on the project: `4h 35m`
 
 ## TOC
 
@@ -33,34 +33,33 @@ Total time spent on the project: `3h 10m`
 - 👉 **Pages**
 ---
   - <span style="color: cyan; font-size: 20px"> List Page </span>
-    1. ❌  A search form that takes in a query and returns a patients’ list. A patient can be searched by name, ID or email (use the data in the attached JSON file)
-    2. ❌ It should have two filters: a sex filter (male and female) and an age filter(“18 - 30”, “31 - 45” and “ > 45”)
+    1. ✅  A search form that takes in a query and returns a patients’ list. A patient can be searched by name, ID or email (use the data in the attached JSON file)
+    2. ✅ It should have two filters: a sex filter (male and female) and an age filter(“18 - 30”, “31 - 45” and “ > 45”)
     3. ❌ An alphabetical sorting option
 
     >Note that the search data should persist, that is the data should not be lost, even when you switch components or routes.
 
     **Scenario**
 
-    - ❌ A user visits the list page and sees a list of patients along with a search form that comprises:
+    - ✅ A user visits the list page and sees a list of patients along with a search form that comprises:
     a search query input, a filter (with sex and age) and an alphabetical sorting tool.
-    - ❌ A user starts searching by typing a query inside the search input field.
-    - ❌ When the user stops typing, that is, after a 500 milliseconds delay, the query is used to search the data
-    - ❌ If a result is found, the data it returns should render a list of patient
-    - ❌ If there is no result, the user should see an error message
-    - ❌ If the user deletes every single search query from the input field, it should return the entire users in the list
-    - ❌ When the user selects the age filter, it should return the search result that contains only the selected age range
-    - ❌ When the user selects the sex filter, It should return the search result that contains only the selected sex
-    - ❌ When the user selects the age filter and the sex filter, it should return the search result that contains only the selected sex and selected age range.
+    - ✅ A user starts searching by typing a query inside the search input field.
+    - ✅ When the user stops typing, that is, after a 500 milliseconds delay, the query is used to search the data
+    - ✅ If a result is found, the data it returns should render a list of patient
+    - ✅ If there is no result, the user should see an error message
+    - ✅ If the user deletes every single search query from the input field, it should return the entire users in the list
+    - ✅ When the user selects the age filter, it should return the search result that contains only the selected age range
+    - ✅ When the user selects the sex filter, It should return the search result that contains only the selected sex
+    - ✅ When the user selects the age filter and the sex filter, it should return the search result that contains only the selected sex and selected age range.
 
     **List Functionality**
-    - ❌ List should only show the Patient ID and Full name
-    - ❌ A route to the Patient's detail page
+    - ✅ List should only show the Patient ID and Full name
+    - ✅ A route to the Patient's detail page
 
     **Scenario**
-    - ❌ A user visits the app main page, the user should see a list of Patients.
-    - ❌ Each list item should have the patient's Full name and patient's ID
-    - ❌ When the user clicks on a Patient on the list
-    - ❌ The user is directed to the patient's detail page
+    - ✅ A user visits the app main page, the user should see a list of Patients.
+    - ✅ Each list item should have the patient's Full name and patient's ID
+    - ✅ When the user clicks on a Patient on the list The user is directed to the patient's detail page
 ----
   - <span style="color: cyan; font-size: 20px"> Details Page </span>
 

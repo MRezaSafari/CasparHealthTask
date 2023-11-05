@@ -3,7 +3,12 @@ import { IconChevronDown, IconChevronUp } from "@tabler/icons-react";
 import { IColumnTemplate, ITableProps, OrderDirection } from "../../models";
 import { TableContainer, EmptyState, HeaderItem } from "./table.styles";
 
-export const Table = <T,>({ columns, data, onSort }: ITableProps<T>) => {
+export const Table = <T,>({
+  columns,
+  data,
+  onSort,
+  onRowClick,
+}: ITableProps<T>) => {
   const handleSort = (key: keyof T | undefined, order: OrderDirection) => {
     if (!key) return;
     onSort && onSort(key, order);
@@ -14,10 +19,11 @@ export const Table = <T,>({ columns, data, onSort }: ITableProps<T>) => {
       <td key={r.title.toLowerCase()} width={r.width}>
         <HeaderItem>
           <span>{r.title}</span>
-          {r.sortable && r.valueKey && (
+          {r.sortable && (
             <ul>
               <li>
                 <IconChevronUp
+                  className="sort-asc"
                   width={15}
                   height={15}
                   onClick={() => handleSort(r.valueKey as keyof T, "ASC")}
@@ -25,6 +31,7 @@ export const Table = <T,>({ columns, data, onSort }: ITableProps<T>) => {
               </li>
               <li>
                 <IconChevronDown
+                  data-testid="sort-desc"
                   width={15}
                   height={15}
                   onClick={() => handleSort(r.valueKey as keyof T, "DESC")}
@@ -38,20 +45,26 @@ export const Table = <T,>({ columns, data, onSort }: ITableProps<T>) => {
 
   const renderRows = () =>
     data &&
-    [...Array(data?.length).keys()].map((row: number) => (
-      <tr key={`row-${row}`}>
-        {columns.map((r: IColumnTemplate<T>) => (
-          <td key={r.title.toLowerCase()} width={r.width}>
-            {r.render && r.render((data as [])[row])}
-            {r.type === "string" && r.valueKey && (data as [])[row][r.valueKey]}
-          </td>
-        ))}
-      </tr>
-    ));
+    [...Array(data?.length).keys()].map((row: number) => {
+      const currrentRow = (data as [])[row];
+      return (
+        <tr
+          key={`row-${row}`}
+          onClick={() => onRowClick && onRowClick(currrentRow)}
+        >
+          {columns.map((r: IColumnTemplate<T>) => (
+            <td key={r.title.toLowerCase()} width={r.width}>
+              {r.render && r.render(currrentRow)}
+              {r.type === "string" && r.valueKey && currrentRow[r.valueKey]}
+            </td>
+          ))}
+        </tr>
+      );
+    });
 
   return (
     <section>
-      <TableContainer cellPadding="0" cellSpacing="0">
+      <TableContainer cellPadding="0" cellSpacing="0" data-testid="table"> 
         <thead>
           <tr>{renderHeaders()}</tr>
         </thead>

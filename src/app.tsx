@@ -6,12 +6,6 @@ import { usePatientsStore } from "./stores";
 import { useEffect } from "react";
 
 const AppRoot = () => {
-  const { initiate } = usePatientsStore();
-
-  useEffect(() => {
-    initiate();
-  }, []);
-  
   return (
     <>
       <Helmet>

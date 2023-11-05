@@ -6,7 +6,7 @@ const GlobalStyle = createGlobalStyle`
     padding: 30px 0;
     background: #f1f1f1;
     color: #000;
-    font-family: Open-Sans, Helvetica, Sans-Serif;
+    font-family: 'Open Sans', sans-serif;
   }
 
   *{
