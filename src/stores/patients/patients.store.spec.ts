@@ -50,7 +50,11 @@ describe("usePatientsStore", () => {
       gender: "All",
       query: "",
       isInitial: false,
-    };
+      sort: {
+        field: "patient_id",
+        order: "asc",
+      },
+    } as IFilters;
     expect(result.current.filters).toEqual(defaultFilters);
   });
 

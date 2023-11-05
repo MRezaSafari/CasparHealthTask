@@ -1,4 +1,4 @@
-Total time spent on the project: `4h 35m`
+Total time spent on the project: `7h 33m`
 
 ## TOC
 
@@ -35,7 +35,7 @@ Total time spent on the project: `4h 35m`
   - <span style="color: cyan; font-size: 20px"> List Page </span>
     1. ✅  A search form that takes in a query and returns a patients’ list. A patient can be searched by name, ID or email (use the data in the attached JSON file)
     2. ✅ It should have two filters: a sex filter (male and female) and an age filter(“18 - 30”, “31 - 45” and “ > 45”)
-    3. ❌ An alphabetical sorting option
+    3. ✅ An alphabetical sorting option
 
     >Note that the search data should persist, that is the data should not be lost, even when you switch components or routes.
 

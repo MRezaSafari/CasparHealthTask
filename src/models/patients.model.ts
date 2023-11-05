@@ -24,4 +24,8 @@ export interface IFilters {
   age: string;
 
   gender: Gender | 'All';
+  sort: {
+    field: keyof IPatient;
+    order: 'asc' | 'desc';
+  };
 }

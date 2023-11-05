@@ -1,2 +1,2 @@
-export { default as debounce } from './debounce';
-export * from './patients.utils';
+export { default as debounce } from './debounce/debounce';
+export * from './patients/patients.utils';

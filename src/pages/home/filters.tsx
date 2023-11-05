@@ -11,11 +11,20 @@ const Filters: FC = () => {
     age: usePatients.filters.age ?? "-1",
     gender: usePatients.filters.gender ?? "All",
     query: usePatients.filters.query ?? "",
+    sort: usePatients.filters.sort ?? "",
     isInitial: true,
   });
 
   const handleFilterChange = (value: string, key: keyof IFilters) => {
     setFilters((prev) => ({ ...prev, isInitial: false, [key]: value }));
+  };
+
+  const handleSortChange = (value: string, key: "field" | "order") => {
+    setFilters((prev) => ({
+      ...prev,
+      isInitial: false,
+      sort: { ...prev.sort, [key]: value },
+    }));
   };
 
   useEffect(() => {
@@ -27,6 +36,10 @@ const Filters: FC = () => {
       age: "-1",
       gender: "All",
       query: "",
+      sort: {
+        field: "patient_id",
+        order: "asc",
+      },
       isInitial: false,
     });
 
@@ -81,6 +94,33 @@ const Filters: FC = () => {
           <option value="18-30">18 - 30</option>
           <option value="31-45">31 - 45</option>
           <option value=">45"> {`>`} 45</option>
+        </select>
+      </div>
+
+      <div>
+        <p>Sort:</p>
+        <select
+          data-testid="sort-field"
+          value={filters.sort.field}
+          onChange={(e) => {
+            handleSortChange(e.target.value, "field");
+          }}
+        >
+          <option value="patient_id">Patient Id</option>
+          <option value="first_name">First Name</option>
+          <option value="last_name">Last Name</option>
+          <option value="email">Email</option>
+          <option value="age">Age</option>
+        </select>
+        <select
+          data-testid="sort-direction"
+          value={filters.sort.order}
+          onChange={(e) => {
+            handleSortChange(e.target.value, "order");
+          }}
+        >
+          <option value="asc">Ascending</option>
+          <option value="desc">Descending</option>
         </select>
       </div>
 

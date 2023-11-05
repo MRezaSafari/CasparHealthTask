@@ -1,4 +1,4 @@
-import { IFilters, IPatient } from "../models";
+import { IFilters, IPatient } from "../../models";
 
 const filterPatients = (patients: IPatient[], filter: IFilters): IPatient[] => {
   let filteredPatients = [...patients];
@@ -23,7 +23,7 @@ const filterPatients = (patients: IPatient[], filter: IFilters): IPatient[] => {
   if (filter.age && filter.age !== "-1") {
     if (filter.age === ">45") {
       filteredPatients = filteredPatients.filter(
-        (patient) => patient.age >= 70
+        (patient) => patient.age >= 45
       );
     } else {
       const ageRange = filter.age.split("-").map(Number);
@@ -31,6 +31,19 @@ const filterPatients = (patients: IPatient[], filter: IFilters): IPatient[] => {
         (patient) => patient.age >= ageRange[0] && patient.age <= ageRange[1]
       );
     }
+  }
+
+  // Sort patients
+  if (filter.sort && filter.sort.field && filter.sort.order) {
+    const { field, order } = filter.sort;
+    filteredPatients.sort((a, b) => {
+      if (a[field] < b[field]) {
+        return order === "asc" ? -1 : 1;
+      } else if (a[field] > b[field]) {
+        return order === "asc" ? 1 : -1;
+      }
+      return 0;
+    });
   }
 
   return filteredPatients;

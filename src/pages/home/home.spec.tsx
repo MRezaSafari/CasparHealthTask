@@ -51,5 +51,7 @@ describe("<HomePage />", () => {
     expect(getByTestId("filter-query")).toBeInTheDocument();
     expect(getByTestId("filter-gender")).toBeInTheDocument();
     expect(getByTestId("filter-age")).toBeInTheDocument();
+    expect(getByTestId("sort-field")).toBeInTheDocument();
+    expect(getByTestId("sort-direction")).toBeInTheDocument();
   });
 });
