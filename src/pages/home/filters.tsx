@@ -45,7 +45,7 @@ const Filters: FC = () => {
 
     searchInputRef.current!.value = "";
 
-    usePatients.reload();
+    usePatients.clearFilters();
   };
 
   const handleQueryChangeDebounced = debounce(() => {

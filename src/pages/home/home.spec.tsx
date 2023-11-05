@@ -3,7 +3,6 @@ import {
 } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import HomePage from "./index";
-import { IColumnTemplate, IPatient } from "../../models";
 
 describe("<HomePage />", () => {
   it("should renders correctly", () => {

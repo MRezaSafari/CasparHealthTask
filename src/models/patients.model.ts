@@ -12,10 +12,14 @@ export interface IPatient {
 
 export interface IPatientsStore {
   patients: IPatient[];
+  filteredPatients: IPatient[];
+  setFilteredPatients: (patients: IPatient[]) => void;
   setPatients: (patients: IPatient[]) => void;
   filters: IFilters;
   setFilters: (filters: IFilters) => void;
-  reload: () => void;
+  clearFilters: () => void;
+  removePatient: (id: number) => void;
+  initiate: (patients: IPatient[]) => void;
 }
 
 export interface IFilters {

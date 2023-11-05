@@ -35,7 +35,7 @@ describe("usePatientsStore", () => {
     expect(result.current.patients.length).toEqual(0);
 
     await act(async () => {
-      result.current.reload();
+      result.current.clearFilters();
     });
 
     waitFor(() => {
@@ -49,7 +49,7 @@ describe("usePatientsStore", () => {
       age: "-1",
       gender: "All",
       query: "",
-      isInitial: false,
+      isInitial: true,
       sort: {
         field: "patient_id",
         order: "asc",

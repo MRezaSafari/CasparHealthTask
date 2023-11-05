@@ -31,14 +31,14 @@ const columns: IColumnTemplate<IPatient>[] = [
 ];
 
 const HomePage: FC = () => {
-  const { patients, filters } = usePatientsStore();
+  const { filteredPatients, setFilteredPatients, filters } = usePatientsStore();
   const navigate = useNavigate();
 
   const handleFiltersChange = async (filters: IFilters) => {
     try {
       const filteredData = await getPatients(filters);
-
-      usePatientsStore.setState({ patients: filteredData });
+      usePatientsStore.setState({ filters });
+      setFilteredPatients(filteredData);
     } catch (error) {
       alert(error);
     }
@@ -68,7 +68,7 @@ const HomePage: FC = () => {
 
       <Table
         columns={columns}
-        data={patients}
+        data={filteredPatients}
         onSort={handleSort}
         onRowClick={handleRowClick}
       />

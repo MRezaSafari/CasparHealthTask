@@ -1,4 +1,4 @@
-Total time spent on the project: `7h 33m`
+Total time spent on the project: `9h 40m`
 
 ## TOC
 
@@ -64,21 +64,21 @@ Total time spent on the project: `7h 33m`
   - <span style="color: cyan; font-size: 20px"> Details Page </span>
 
 - Go back Functionality
-  - ❌ A go back button
+  - ✅ A go back button
 
 - Scenario
-  - ❌ A user visits the Patient's details page
-  - ❌ When the user clicks the go back button, the user is directed back to the list page. The search result, filter and sort data should persist.
+  - ✅ A user visits the Patient's details page
+  - ✅ When the user clicks the go back button, the user is directed back to the list page. The search result, filter and sort data should persist.
 - Delete Functionality
-    - ❌ A delete button to trigger delete confirmation modal
-    - ❌ A delete confirmation modal with a confirm delete and a cancel button
+    - ✅ A delete button to trigger delete confirmation modal
+    - ✅ A delete confirmation modal with a confirm delete and a cancel button
 - Scenario
-    - ❌ A user visits the Patient's details page, the user should see the complete patient data.
-    - ❌ And it should have a delete button.
-    - ❌ When the user clicks on the delete button, a modal should pop up with a confirmation text:
+    - ✅ A user visits the Patient's details page, the user should see the complete patient data.
+    - ✅ And it should have a delete button.
+    - ✅ When the user clicks on the delete button, a modal should pop up with a confirmation text:
     "Are you sure you want to delete `${userID}`"?
-    - ❌ When the user clicks on the confirm Delete button, the Patient is deleted
-    - ❌ And the user is directed back to the main page with the same search result, filter and sort data that were there previously without the deleted Patient.
+    - ✅ When the user clicks on the confirm Delete button, the Patient is deleted
+    - ✅ And the user is directed back to the main page with the same search result, filter and sort data that were there previously without the deleted Patient.
 
 ## My Stack of choice
 
