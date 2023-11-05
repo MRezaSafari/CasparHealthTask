@@ -1,0 +1,262 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table should match the snapshot 1`] = `
+<div>
+  <section>
+    <table
+      cellpadding="0"
+      cellspacing="0"
+      class="sc-bdnyFh djjcnq"
+    >
+      <thead>
+        <tr>
+          <td
+            width="20%"
+          >
+            <div
+              class="sc-gtsqUy cbCKTL"
+            >
+              <span>
+                First name
+              </span>
+              <ul>
+                <li>
+                  <svg
+                    class="tabler-icon tabler-icon-chevron-up"
+                    fill="none"
+                    height="15"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="15"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 15l6 -6l6 6"
+                    />
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="tabler-icon tabler-icon-chevron-down"
+                    fill="none"
+                    height="15"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="15"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 9l6 6l6 -6"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </td>
+          <td
+            width="20%"
+          >
+            <div
+              class="sc-gtsqUy cbCKTL"
+            >
+              <span>
+                Last name
+              </span>
+              <ul>
+                <li>
+                  <svg
+                    class="tabler-icon tabler-icon-chevron-up"
+                    fill="none"
+                    height="15"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="15"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 15l6 -6l6 6"
+                    />
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="tabler-icon tabler-icon-chevron-down"
+                    fill="none"
+                    height="15"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="15"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 9l6 6l6 -6"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </thead>
+    </table>
+    <div
+      class="sc-dlniIP eYvRRJ"
+    >
+      No Data!
+    </div>
+  </section>
+</div>
+`;
+
+exports[`Table should match the snapshot with data 1`] = `
+<div>
+  <section>
+    <table
+      cellpadding="0"
+      cellspacing="0"
+      class="sc-bdnyFh djjcnq"
+    >
+      <thead>
+        <tr>
+          <td
+            width="20%"
+          >
+            <div
+              class="sc-gtsqUy cbCKTL"
+            >
+              <span>
+                First name
+              </span>
+              <ul>
+                <li>
+                  <svg
+                    class="tabler-icon tabler-icon-chevron-up"
+                    fill="none"
+                    height="15"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="15"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 15l6 -6l6 6"
+                    />
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="tabler-icon tabler-icon-chevron-down"
+                    fill="none"
+                    height="15"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="15"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 9l6 6l6 -6"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </td>
+          <td
+            width="20%"
+          >
+            <div
+              class="sc-gtsqUy cbCKTL"
+            >
+              <span>
+                Last name
+              </span>
+              <ul>
+                <li>
+                  <svg
+                    class="tabler-icon tabler-icon-chevron-up"
+                    fill="none"
+                    height="15"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="15"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 15l6 -6l6 6"
+                    />
+                  </svg>
+                </li>
+                <li>
+                  <svg
+                    class="tabler-icon tabler-icon-chevron-down"
+                    fill="none"
+                    height="15"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="15"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M6 9l6 6l6 -6"
+                    />
+                  </svg>
+                </li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td
+            width="20%"
+          >
+            Berke
+          </td>
+          <td
+            width="20%"
+          >
+            Tett
+          </td>
+        </tr>
+        <tr>
+          <td
+            width="20%"
+          >
+            Catlaina
+          </td>
+          <td
+            width="20%"
+          >
+            Estrella
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+</div>
+`;
