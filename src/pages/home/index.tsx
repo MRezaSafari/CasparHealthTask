@@ -1,9 +1,11 @@
 import React, { FC } from "react";
+import { usePatientsStore } from "../../stores";
 
 interface Props {}
 
 const HomePage: FC<Props> = () => {
-  return <>Home</>;
+  const { patients } = usePatientsStore();
+  return <>{patients.length}</>;
 };
 
 export default HomePage;

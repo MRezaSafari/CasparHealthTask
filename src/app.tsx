@@ -1,11 +1,17 @@
-import React from "react";
-
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/home";
 import { Helmet } from "react-helmet-async";
 import GlobalStyle from "./globalStyles";
+import { usePatientsStore } from "./stores";
+import { useEffect } from "react";
 
 const AppRoot = () => {
+  const { initiate } = usePatientsStore();
+
+  useEffect(() => {
+    initiate();
+  }, []);
+  
   return (
     <>
       <Helmet>

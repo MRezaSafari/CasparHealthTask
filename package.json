@@ -8,8 +8,7 @@
   "scripts": {
     "start": "webpack serve --mode development --open",
     "build": "webpack --mode production",
-    "test": "jest",
-    "e2e": "playwright test"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
